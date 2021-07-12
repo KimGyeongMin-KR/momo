@@ -1,0 +1,208 @@
+*{
+    padding: 0; margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+header{
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    line-height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+header div {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+header div h1{
+    float: left;
+    width: 35%;
+    
+}
+header div h1 a{
+    /* float: left; */
+    color: black;
+    text-decoration: none;
+}
+header div h1 a:visited{
+    color: black;
+}
+header div h1::after{
+    clear: both;
+}
+header div input{
+    line-height: 30px;
+    width: 40%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+header > div > span {
+    float: right;
+    /* background-color: aquamarine; */
+    /* height: 20px; */
+    vertical-align: middle;
+}
+header > div > span > a{
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    border: black solid 1px;
+    text-decoration: none;
+}
+header > div > span > a:visited{
+    color: black;
+}
+header div a::before{
+    clear: both;
+}
+
+/* end of header */
+
+div.bottom-menu-bar{
+    position: fixed;
+    left: 35%;
+    top: 92%;
+    height: 60px;
+    /* height: 8%; */
+    /* max-height: 60px; */
+    min-width: 300px;
+    min-height: 30px;
+    width: 30%;
+    /* max-width: 500px; */
+    background-color: rgb(241, 241, 241);
+    font-size: 14px;
+    border-radius: 5px;
+    /* max-height: 40px; */
+}
+div.bottom-menu-bar ul{
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    line-height: 60px;
+
+}
+div.bottom-menu-bar ul li{
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+}
+div.bottom-menu-bar ul li:not(:first-child){
+    margin-left: 3%;
+}
+div.bottom-menu-bar ul li a{
+    display: inline-block;
+    width: 50px;
+    line-height: 50px;
+    /* background-color: aquamarine; */
+    border: 1px solid black;
+    border-radius: 5px;
+}
+div.bottom-menu-bar ul li a.active{
+    background-color: yellow;
+}
+div.bottom-menu-bar ul li a:hover{
+    width: 55px;
+    line-height: 55px;
+    border-radius: 5px;
+}
+/* end of bottom-menu-bar */
+
+div.point-service-section{
+    margin-top: 60px;
+    width: 100%;
+    background-color: rgba(131, 245, 18, 0.3);
+    height: 800px;
+
+}
+div.point-service-section div{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 750px;
+
+    background-image: url("http://via.placeholder.com/300x600");
+    background-position: right top;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+}
+div.point-service-section div div h2,
+div.ad-service-section div h2{
+    padding-top: 350px;
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 15px;
+}
+div.point-service-section div div p{
+    margin-bottom: 260px;
+    font-weight: 500;
+    font-size: 16px;
+}
+div.point-service-section div a{
+    line-height: 36px;
+    float: right;
+    /* width: 150px; */
+    padding: 0 7px 0;
+    margin-right: 15px;
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: rgb(117, 117, 117);
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 27px;
+
+    background-image: url("https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/apple-store-3a664174124650d63cae365bc55586fc5ff27b822b1b97788fc4af77d73d00c8.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+}
+div.point-service-section div a:nth-child(2){
+    background-image: url("https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/google-play-c9ad0fc573cd01e2b982df5de6709a3d8d7cec8d9b58a5c08db7da0b92a32a75.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+}
+div.point-service-section div a img{
+    /* padding-top: 10px; */
+    vertical-align: middle;
+}
+/*end of point-service-section */
+
+div.ad-service-section{
+    height: 800px;
+    background-color: rgba(233, 150, 122, 0.3);
+}
+
+/* end of ad-service-section */
+
+div.ad-service-content-section{
+    background-color: rgba(255, 255, 0, 0.308);
+    width: 100%;
+}
+div.ad-service-content-section section{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+div.ad-service-content-section section span{
+    display: inline-block;
+    width: 49%;
+}
+div.ad-service-content-section section span a{
+    text-align: right;
+    display: block;
+}
+div.ad-service-content-section section > div > a{
+    width: 23%;
+    float: left;
+    background-color: rgba(216, 191, 216, 0.288);
+}
+div.ad-service-content-section section > div > a:not(:first-child){
+    margin-left: 2.5%;
+}
+div.ad-service-content-section section > div > a > article img{
+    width: 100%;
+}
