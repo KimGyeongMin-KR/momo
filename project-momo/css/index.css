@@ -104,7 +104,7 @@ div.bottom-menu-bar ul li a{
     border-radius: 5px;
 }
 div.bottom-menu-bar ul li a.active{
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.493);
 }
 div.bottom-menu-bar ul li a:hover{
     width: 55px;
@@ -180,7 +180,7 @@ div.ad-service-section{
 /* end of ad-service-section */
 
 div.ad-service-content-section{
-    background-color: rgba(255, 255, 0, 0.308);
+    /* background-color: rgba(255, 255, 0, 0.308); */
     width: 100%;
 }
 div.ad-service-content-section section{
@@ -190,6 +190,9 @@ div.ad-service-content-section section{
 div.ad-service-content-section section span{
     display: inline-block;
     width: 49%;
+}
+div.ad-service-content-section section > span:nth-of-type(1){
+    font-size: 30px;
 }
 div.ad-service-content-section section span a{
     text-align: right;
@@ -203,6 +206,19 @@ div.ad-service-content-section section > div > a{
 div.ad-service-content-section section > div > a:not(:first-child){
     margin-left: 2.5%;
 }
+div.ad-service-content-section section > div > a article > span:nth-of-type(1){
+    /* display: inline-block; */
+    width: 30%;
+    background-color: rgba(128, 128, 128, 0.356);
+    color: grey;
+}
+div.ad-service-content-section section > div > a article > span:nth-of-type(2),
+div.ad-service-content-section section > div > a article > span:nth-of-type(3){
+    display: block;
+    text-align: right;
+    width: 100%;
+}
 div.ad-service-content-section section > div > a > article img{
     width: 100%;
 }
+/* end of ad-service-content-section */
