@@ -1,0 +1,94 @@
+*{
+    padding: 0; margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header div, 
+div.sec-gnb div.sec-gnb-wrap,
+div.main-content-wrap{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+
+
+header{
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    line-height: 60px;
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+}
+header div h1{
+    float: left;
+    width: 35%;
+    
+}
+header div h1 a{
+    /* float: left; */
+    color: black;
+    text-decoration: none;
+}
+header div h1 a:visited{
+    color: black;
+}
+header div h1::after{
+    clear: both;
+}
+header div input{
+    line-height: 30px;
+    width: 40%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+header > div > span {
+    float: right;
+    /* background-color: aquamarine; */
+    /* height: 20px; */
+    vertical-align: middle;
+}
+header > div > span > a{
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    border: black solid 1px;
+    text-decoration: none;
+}
+header > div > span > a:visited{
+    color: black;
+}
+
+div.sec-gnb {
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+div.sec-gnb div.sec-gnb-wrap ul{
+    list-style: none;
+    text-align: center;
+}
+div.sec-gnb div.sec-gnb-wrap ul li{
+    width: 100px;
+    font-size: 25px;
+    /* float: left; */
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+
+}
+/* 글로벌 내비게이션 바 끝*/
+
+
+
+
+
+
+/*푸터 끝*/
