@@ -1,3 +1,4 @@
+
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.hashers import make_password, check_password
@@ -15,7 +16,7 @@ def home(request):
 def logout(request):
     if request.session.get('user'):
         del(request.session['user'])
-
+    
     return redirect('/')
 
 
@@ -30,15 +31,19 @@ def login(request):
         if not (username and password):
             res_data ['error'] ='모든 값을 입력해야합니다'
         else:
-            Momouser = MomoUser.objects.get(username=username)
-            if check_password(password, Momouser.password):
-                request.session['user'] = Momouser.id
-                return redirect('/')
+            try:
+                Momouser = MomoUser.objects.get(username=username)
+            except:
+                res_data['error'] = 'id or pw check'
             else:
-                res_data['error'] = '아이디 또는 비밀번호를 확인해주세요'
+            # print(Momouser)
+                if check_password(password, Momouser.password):
+                    request.session['user'] = Momouser.id
+                    return redirect('/')
+                else:
+                    res_data['error'] = '아이디 또는 비밀번호를 확인해주세요'
 
         return render(request, 'html/login.html', res_data)
-
 
 def register(request):
     if request.method == 'GET':
